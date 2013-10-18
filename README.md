@@ -12,7 +12,7 @@ BASS is available for many different platforms
 How to use?
 =============
 ## Android
-* Copy the libs and src folder to your target build directory
+* Copy the libs and src folder (from the android subfolder of this repo) to your target build directory
 
 
 [Monkey]: http://www.monkeycoder.co.nz/
