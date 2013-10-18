@@ -308,13 +308,21 @@ Global  BASS_DX8_PHASE_180% = 4
 Extern
 
 Function BASS_Init?(device%, freq%, flags%)="BASS.BASS_Init"
-Function BASS_SampleLoad%(file$, offset#, length%, max%, flags%)="BassGlue.BASS_SampleLoad"
-Function BASS_ChannelPlay?(handle%, restart?)="BASS.BASS_ChannelPlay"
-Function BASS_SampleGetChannel%(handle%, onlynew?)="BASS.BASS_SampleGetChannel"
-Function BASS_ChannelStop?(handle%)="BASS.BASS_ChannelStop"
 Function BASS_GetInfo?(info:BASS_INFO)="BASS.BASS_GetInfo"
 Function BASS_SetConfig?(option%, value%)="BASS.BASS_SetConfig"
 Function BASS_GetConfig%(option%)="BASS.BASS_GetConfig"
+
+Function BASS_ChannelStop?(handle%)="BASS.BASS_ChannelStop"
+Function BASS_ChannelIsActive%(handle%)="BASS.BASS_ChannelIsActive"
+Function BASS_ChannelSetAttribute?(handle%, attrib%, value#)="BASS.BASS_ChannelSetAttribute"
+Function BASS_ChannelPlay?(handle%, restart?)="BASS.BASS_ChannelPlay"
+
+Function BASS_SampleLoad%(file$, offset#, length%, max%, flags%)="BassGlue.BASS_SampleLoad"
+Function BASS_SampleGetChannel%(handle%, onlynew?)="BASS.BASS_SampleGetChannel"
+Function BASS_SampleFree%(handle%)="BASS.BASS_SampleFree"
+Function BASS_SampleGetInfo?(handle%, info:BASS_SAMPLE)="BASS.BASS_SampleGetInfo"
+Function BASS_SampleSetInfo?(handle%, info:BASS_SAMPLE)="BASS.BASS_SampleSetInfo"
+Function BASS_SampleGetChannels%(handle%, channels%[])="BASS.BASS_SampleGetChannels"
 
 ' Device info structure
 Class BASS_DEVICEINFO="BASS.BASS_DEVICEINFO"
