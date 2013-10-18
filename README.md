@@ -13,7 +13,7 @@ How to use?
 =============
 ## Android
 * Copy the libs and src folder (from the android subfolder of this repo) to your target build directory
-
+* Import the bass monkey module and you're ready to go
 
 [Monkey]: http://www.monkeycoder.co.nz/
 [BASS]: http://www.un4seen.com/
