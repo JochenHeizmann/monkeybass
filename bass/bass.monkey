@@ -1,6 +1,10 @@
 Strict
 
+#if TARGET="android"
 Import "native/bassglue.java"
+#Else
+Import "native/bassglue.ios.cpp"
+#end
 
 Global  BASSVERSIONTEXT$ = "2.4"
 
